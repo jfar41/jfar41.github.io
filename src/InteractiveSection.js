@@ -44,8 +44,7 @@ export class InteractiveSection extends React.Component {
                     <OrbitControls
                         // enableZoom={false}
                     />
-                    {/* <AquaLight /> */}
-                    {/* <ambientLight /> */}
+                    <ambientLight />
                     <Lamp1 position={[0, 15, 0]}/>
                     <Lamp2 />
                     <Lamp3 />
