@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import React, { Suspense, useRef } from "react";
 import "./style.scss";
 import * as THREE from 'three';
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import {OrbitControls, useHelper} from '@react-three/drei'
 import { SpotLightHelper } from "three";
 import { Scene } from "three";
 
 import { Lamp1, Lamp2, Lamp3 } from "./components/lights";
+import BusStop from "./models/bus_stop/BusStop"
 
 const seaTexture = new THREE.TextureLoader().load(require("./images/sandGrey.jpg"));
 
@@ -48,6 +50,9 @@ export class InteractiveSection extends React.Component {
                     <Lamp1 position={[0, 15, 0]}/>
                     <Lamp2 />
                     <Lamp3 />
+                    <Suspense fallback={null}>
+                        <BusStop />
+                    </Suspense>
                 </Canvas>
             </div>
         )
