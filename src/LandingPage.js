@@ -1,6 +1,6 @@
 import React from "react";
 import './style.scss';
-import {InteractiveSection} from "./InteractiveSection";
+import {InteractiveSection} from "./InteractiveSection2";
 
 export class LandingPage extends React.Component {
     constructor(props) {

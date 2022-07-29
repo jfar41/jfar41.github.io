@@ -8,7 +8,7 @@ import { SpotLightHelper } from "three";
 import { Scene } from "three";
 
 import { Lamp1, Lamp2, Lamp3 } from "./components/lights";
-import { LampPost } from "./components/LampPost";
+import { LampPost } from "./components/LampPost/LampPost";
 import BusStop from "./models/bus_stop/BusStop"
 
 const seaTexture = new THREE.TextureLoader().load(require("./images/sandGrey.jpg"));
