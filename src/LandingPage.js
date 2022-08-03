@@ -1,7 +1,7 @@
 import React from "react";
 import './style.scss';
 import {InteractiveSection} from "./InteractiveSection2";
-
+import { Header } from "./components/Header";
 export class LandingPage extends React.Component {
     constructor(props) {
         super(props);
@@ -16,6 +16,7 @@ export class LandingPage extends React.Component {
         return (
             <div className="landingPage">
                 <InteractiveSection />
+                <Header />
             </div>
         )
     }
