@@ -3,10 +3,11 @@ import { useState, useRef} from 'react';
 import { SpotLight, useHelper } from '@react-three/drei';
 import { SpotLightHelper } from 'three';
 
-export function Lamp1(props) {
+export function Lamp1({pos}) {
     const [target] = useState(() => new THREE.Object3D())
     const helper = useRef();
-    useHelper(helper, SpotLightHelper, "red")
+    useHelper(helper, SpotLightHelper, "blue")
+    const defPos = [-180, 100, -350]
     return (
         <mesh>
             <meshStandardMaterial />
@@ -14,11 +15,11 @@ export function Lamp1(props) {
                 ref={helper}
                 color={"#1B5E6C"}
                 intensity={2}
-                position={[-180, 100, -350]}
-                power={50}
+                position={pos ? pos : defPos}
+                power={20}
                 // angle={0.30054}
                 angle={0.40054}
-                target={target}
+                // target={target}
                 decay={0}
                 distance={200}
                 penumbra={1}
