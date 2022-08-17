@@ -4,31 +4,38 @@
 // left side is about
 import React, { useRef } from "react";
 import * as THREE from "three";
-import "../style.scss";
+import "./style.scss";
 import {Canvas} from "@react-three/fiber"
 import { OrbitControls, useHelper } from "@react-three/drei";
-import { Model } from "../../models/frames/Frames"
+// import { Model } from "../../models/frames/Frames"
+import { Frame } from "../3dmodels/Frame";
 import { SpotLightHelper } from "three";
-import { Lamp1 } from "../lights";
+import { Lamp1 } from "../scenery/lights";
 
 export const AboutPage = () => {
     return (
         <div className="aboutPage">
             <div className="left">
-                <div className="title">
+                <div className="subtitle">
                     Jesus Federico Aguilar Ramirez
                 </div>
-                <div className="subtitle">
+                <div className="title">
                 Full Stack Software Engineer
                 </div>
                 <div className="body">
+                <p>
                 I have 2 years of professional experience using cutting edge 
                 technology to create software that is performant, maintainable, scalable, 
                 secure, and focused on optimizing the user experience for an education based 
                 platform with 100k monthly users. I am an agile team player that adapts to 
-                team demands and takes initiative in the projects that I am a part of.
+                team demands and takes initiative in the projects that I am a part of.    
+                </p>
+                <p>
+                The majority of my career has been spent maintaining and creating for JS+React+Node based single page applications with cloud management, networking, compute power, storage, security, and permissions provided by the Google Cloud Platform.
 
+                </p>
                 </div>
+           
             </div>
             <div className="right">
 
@@ -60,7 +67,7 @@ export const AboutPage = () => {
                                 args={[80, 80, 0]}
                             /> */}
                         </mesh>
-                        <Model />
+                        <Frame />
                         {/* <ambientLight 
                             intensity={0.5}
                         /> */}
