@@ -21,6 +21,8 @@ export const InteractiveSection = () => {
                 resize={{scroll: false}}
             >
                 <OrbitControls
+                    enableZoom={false}
+                    enableRotate={false}
                 />
                 <ambientLight intensity={0.8}/>
                 <Lamp1 pos={[-150, 200, 250]}/>

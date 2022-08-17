@@ -45,7 +45,7 @@ export class InteractiveSection extends React.Component {
                         </mesh>
                     </group>
                     <OrbitControls
-                        // enableZoom={false}
+                        enableZoom={false}
                     />
                     <ambientLight />
                     <Lamp1 position={[0, 15, 0]}/>
