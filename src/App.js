@@ -3,6 +3,7 @@ import {Router, Route, Routes, BrowserRouter} from 'react-router-dom'
 import './style.scss';
 import { Portfolio } from './Portfolio';
 
+
 function App() {
     return (
         <BrowserRouter>

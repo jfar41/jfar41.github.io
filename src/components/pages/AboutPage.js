@@ -13,8 +13,9 @@ import { SpotLightHelper } from "three";
 import { Lamp1 } from "../scenery/lights";
 
 export const AboutPage = () => {
+    console.log('About page')
     return (
-        <div className="aboutPage">
+        <div className="aboutPage" id="about">
             <div className="left">
                 <div className="subtitle">
                     Jesus Federico Aguilar Ramirez

@@ -11,10 +11,12 @@ import { SpotLightHelper, TextureLoader } from "three";
 import { Lamp1 } from "../scenery/lights";
 
 export const HomePage = () => {
+    console.log('Home Page loaded')
     const upperPos = [-200, 200, 150]
     // const coneMaterial = useLoader(TextureLoader, require("./images/brick.jpg"))
+
     return (
-        <div className="canvas">
+        <div className="canvas" id="home">
             <Canvas 
                 legacy={false}
                 camera={{position: [0, -1, 10], fov: 100}}

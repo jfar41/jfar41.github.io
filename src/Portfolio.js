@@ -1,9 +1,10 @@
 import React from "react";
 import './style.scss';
 // import {InteractiveSection} from "./InteractiveSection2";
-import {HomePage} from "./components/pages/HomePage";
 import { Header } from "./components/Header";
+import {HomePage} from "./components/pages/HomePage";
 import {AboutPage} from "./components/pages/AboutPage";
+
 
 export class Portfolio extends React.Component {
     constructor(props) {
@@ -13,11 +14,12 @@ export class Portfolio extends React.Component {
         }
     }
     componentDidMount() {
-        console.log('Portfolio loaded!')
+        window.history.pushState({'page_id': 1}, '', '/')
     }
+
     render() {
         return (
-            <div className="portfolio">
+            <div className="portfolio" id="portfolio">
                 <HomePage />
                 <AboutPage />
                 <Header />
