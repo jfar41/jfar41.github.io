@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.117ffb76.css",
-    "main.js": "/static/js/main.e249e67c.js",
+    "main.css": "/static/css/main.811a97f3.css",
+    "main.js": "/static/js/main.c77af5cc.js",
     "static/media/jayAtGraduation.jpeg": "/static/media/jayAtGraduation.b1c78b8c6772f04f1864.jpeg",
     "index.html": "/index.html",
-    "main.117ffb76.css.map": "/static/css/main.117ffb76.css.map",
-    "main.e249e67c.js.map": "/static/js/main.e249e67c.js.map"
+    "main.811a97f3.css.map": "/static/css/main.811a97f3.css.map",
+    "main.c77af5cc.js.map": "/static/js/main.c77af5cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.117ffb76.css",
-    "static/js/main.e249e67c.js"
+    "static/css/main.811a97f3.css",
+    "static/js/main.c77af5cc.js"
   ]
 }
