@@ -35,8 +35,8 @@ export class AboutPage extends React.Component {
                         <p>
                             I have 2 years of professional experience creating software 
                             for an education based platform with 100k monthly users.
-                            I like to pretend barista in my spare time☕️, count my macros🏋🏽‍♂️, and 
-                            create CS content for my socials📸.
+                            I like to work on my latte art in my spare time☕️, count my macros🏋🏽‍♂️, and 
+                            travel with friends🌎.
                         </p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export class AboutPage extends React.Component {
                         <h1>My Skills</h1>
                     </div>
                     <div className="content">
-                        <p>JavaScript, React, Redux, Google Cloud Platform, Python, HTML, CSS, Node.js, TypeScript, web APIs, Express, Github, MongoDB</p>
+                        <p>JavaScript, React, Redux, Google Cloud Platform (firebase, firestore, cloud functions, security + permissions), Python, HTML, CSS, Node.js, TypeScript, web APIs, Express, Github, MongoDB, Amazon Web Services</p>
                     </div>
                 </div>
                 <div className="aboutRow">
