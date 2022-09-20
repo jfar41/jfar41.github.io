@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.811a97f3.css",
-    "main.js": "/static/js/main.c77af5cc.js",
+    "main.css": "/static/css/main.0f04d5ef.css",
+    "main.js": "/static/js/main.b2cbf1fa.js",
+    "static/media/DevTeam.jpeg": "/static/media/DevTeam.8dcd3da36de450e1143f.jpeg",
+    "static/media/skillSet.jpg": "/static/media/skillSet.52c9a61735adc2bd8cf5.jpg",
     "static/media/jayAtGraduation.jpeg": "/static/media/jayAtGraduation.b1c78b8c6772f04f1864.jpeg",
     "index.html": "/index.html",
-    "main.811a97f3.css.map": "/static/css/main.811a97f3.css.map",
-    "main.c77af5cc.js.map": "/static/js/main.c77af5cc.js.map"
+    "main.0f04d5ef.css.map": "/static/css/main.0f04d5ef.css.map",
+    "main.b2cbf1fa.js.map": "/static/js/main.b2cbf1fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.811a97f3.css",
-    "static/js/main.c77af5cc.js"
+    "static/css/main.0f04d5ef.css",
+    "static/js/main.b2cbf1fa.js"
   ]
 }
