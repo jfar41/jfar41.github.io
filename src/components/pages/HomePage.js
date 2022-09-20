@@ -14,7 +14,7 @@ export const HomePage = () => {
     console.log('Home Page loaded')
     const upperPos = [-200, 200, 150]
     // const coneMaterial = useLoader(TextureLoader, require("./images/brick.jpg"))
-
+    console.log(window.history)
     return (
         <div className="canvas" id="home">
             <Canvas 

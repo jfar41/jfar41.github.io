@@ -11,78 +11,60 @@ import { OrbitControls, useHelper } from "@react-three/drei";
 import { Frame } from "../3dmodels/Frame";
 import { SpotLightHelper } from "three";
 import { Lamp1 } from "../scenery/lights";
+import {FaPlay, FaLock, FaTwitter, FaGithub, FaLinkedin} from "react-icons/fa"
 
-export const AboutPage = () => {
-    console.log('About page')
-    return (
-        <div className="aboutPage" id="about">
-            <div className="left">
-                <div className="subtitle">
-                    Jesus Federico Aguilar Ramirez
-                </div>
-                <div className="title">
-                Full Stack Software Engineer
-                </div>
-                <div className="body">
-                <p>
-                I have 2 years of professional experience using cutting edge 
-                technology to create software that is performant, maintainable, scalable, 
-                secure, and focused on optimizing the user experience for an education based 
-                platform with 100k monthly users. I am an agile team player that adapts to 
-                team demands and takes initiative in the projects that I am a part of.    
-                </p>
-                <p>
-                The majority of my career has been spent maintaining and creating for JS+React+Node based single page applications with cloud management, networking, compute power, storage, security, and permissions provided by the Google Cloud Platform.
 
-                </p>
+const jayAtGraduation = require("../../images/jayAtGraduation.jpeg")
+const skillSet = require("../../images/skillSet.jpg");
+
+export class AboutPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+
+    render() {
+        return (
+            <div className="aboutSection" id="about">
+                <div className="aboutRow">
+                    <img src={jayAtGraduation} />
+                    <div className="content rightSide">
+                        <h1>I'm Federico, a Full Stack Engineer👋🏽</h1>
+                        <p>
+                            I have 2 years of professional experience creating software 
+                            for an education based platform with 100k monthly users.
+                            I like to pretend barista in my spare time☕️, count my macros🏋🏽‍♂️, and 
+                            create CS content for my socials📸.
+                        </p>
+                    </div>
                 </div>
-           
+                <div className="aboutRow">
+                    <div className="content sectionTitle" style={{minWidth: "200px"}}>
+                        <h1>My Skills</h1>
+                    </div>
+                    <div className="content">
+                        <p>JavaScript, React, Redux, Google Cloud Platform, Python, HTML, CSS, Node.js, TypeScript, web APIs, Express, Github, MongoDB</p>
+                    </div>
+                </div>
+                <div className="aboutRow">
+                    <div className="content sectionTitle" style={{minWidth: "20px"}}>
+                        <h1>Education</h1>
+                    </div>
+                    <div className="content">
+                        <ol>
+                            Biological Sciences B.S. from the University of California, Irvine
+                        </ol>
+                        <ol>
+                            Software Engineering Immersive by General Assembly
+                        </ol>
+                    </div>
+                </div>
+                <div className="aboutRow">
+                    <h1 className="content">Experience</h1>
+                </div>
             </div>
-            <div className="right">
-
-                    <Canvas
-                        legacy={false}
-                        camera={{position:[0, 0, 78], fov: 90}}
-                        resize={{scroll: false}}
-                    >
-                        <OrbitControls
-                            enableZoom={false}
-                            minPolarAngle={Math.PI / 2}
-                            maxPolarAngle={Math.PI / 2}
-                        />
-                        <mesh
-                            rotation={[-Math.PI / 2, 0, 0]}
-                            position={[0, -40 , -3]}
-                            castShadow
-                            receiveShadow
-                        >
-                            <meshPhongMaterial
-                                // side={THREE.BackSide}
-                                color={"#474747"}
-                            />
-                            <circleGeometry 
-                                args={[28, 50]}
-                                // scale={[5, 5, 1]}
-                            />
-                            {/* <boxGeometry 
-                                args={[80, 80, 0]}
-                            /> */}
-                        </mesh>
-                        <Frame />
-                        {/* <ambientLight 
-                            intensity={0.5}
-                        /> */}
-                    <Lamp1 
-                            angle={0.29}
-                            color={"#FFF8DC"}
-                            pos={[0, 90, 8]}
-                            power={10}
-                            targetPos={[50, 0, 0]}
-                    />
-                    </Canvas>
-
-
-            </div>
-        </div>
-    )
+        )
+    }
 }

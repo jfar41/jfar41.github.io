@@ -11,7 +11,7 @@ export class Header extends React.Component {
         }
     }
     componentDidMount() {
-        const portfolioRef = document.getElementById('portfolio')
+        const portfolioRef = document.getElementById('experience')
         const homeRef = document.getElementById('home')
         const homeFromTop = homeRef.getBoundingClientRect().top
         const aboutRef = document.getElementById('about')
@@ -22,9 +22,11 @@ export class Header extends React.Component {
         portfolioRef.addEventListener('scroll', () => {
             if (homeRef.getBoundingClientRect().top == 0) {
                 window.history.pushState({'page_id': 1}, '', '/')
+                this.props.updateViewingPage(1)
             } 
             if (aboutRef.getBoundingClientRect().top == 0) {
                 window.history.pushState({'page_id': 2}, '', '#about')
+                this.props.updateViewingPage(2)
             }
         })
     }
@@ -54,7 +56,7 @@ export class Header extends React.Component {
                         About
                     </div>
                     <div className="icon hidden">
-                        Projects
+                        Experience
                     </div>
                     <div className="icon hidden">
                         <FaLock/>
