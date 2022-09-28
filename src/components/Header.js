@@ -11,30 +11,30 @@ export class Header extends React.Component {
             experienceFromTop: null,
         }
     }
-    componentDidMount() {
-        const portfolioRef = document.getElementById('portfolio')
-        const homeRef = document.getElementById('home')
-        const homeFromTop = homeRef.getBoundingClientRect().top
-        const aboutRef = document.getElementById('about')
-        const aboutFromTop = aboutRef.getBoundingClientRect().top
-        const experienceRef = document.getElementById('experience')
-        const experienceFromTop = experienceRef.getBoundingClientRect().top
+    // componentDidMount() {
+    //     const portfolioRef = document.getElementById('portfolio')
+    //     const homeRef = document.getElementById('home')
+    //     const homeFromTop = homeRef.getBoundingClientRect().top
+    //     const aboutRef = document.getElementById('about')
+    //     const aboutFromTop = aboutRef.getBoundingClientRect().top
+    //     const experienceRef = document.getElementById('experience')
+    //     const experienceFromTop = experienceRef.getBoundingClientRect().top
 
-        this.setState({homeFromTop, aboutFromTop, experienceFromTop})
+    //     this.setState({homeFromTop, aboutFromTop, experienceFromTop})
 
-        portfolioRef.addEventListener('scroll', () => {
-            if (homeRef.getBoundingClientRect().top >= 0 || homeRef.getBoundingClientRect().bottom >= 0) {
-                window.history.pushState({'page_id': 1}, '', '/')
-                this.props.updateViewingPage(1)
-            } else if (aboutRef.getBoundingClientRect().top >= 0 || aboutRef.getBoundingClientRect().bottom >= 0) {
-                window.history.pushState({'page_id': 2}, '', '#about')
-                this.props.updateViewingPage(2)
-            } else if (experienceRef.getBoundingClientRect().top >= 0 || experienceRef.getBoundingClientRect().bottom >= 0) {
-                window.history.pushState({'page_id': 3}, '', "#experience")
-                this.props.updateViewingPage(3)
-            }
-        })
-    }
+    //     portfolioRef.addEventListener('scroll', () => {
+    //         if (homeRef.getBoundingClientRect().top >= 0 || homeRef.getBoundingClientRect().bottom >= 0) {
+    //             window.history.pushState({'page_id': 1}, '', '/')
+    //             this.props.updateViewingPage(1)
+    //         } else if (aboutRef.getBoundingClientRect().top >= 0 || aboutRef.getBoundingClientRect().bottom >= 0) {
+    //             window.history.pushState({'page_id': 2}, '', '#about')
+    //             this.props.updateViewingPage(2)
+    //         } else if (experienceRef.getBoundingClientRect().top >= 0 || experienceRef.getBoundingClientRect().bottom >= 0) {
+    //             window.history.pushState({'page_id': 3}, '', "#experience")
+    //             this.props.updateViewingPage(3)
+    //         }
+    //     })
+    // }
     render() {
         const portfolio = document.getElementById('portfolio')
 

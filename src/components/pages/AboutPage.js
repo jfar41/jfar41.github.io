@@ -41,15 +41,30 @@ export class AboutPage extends React.Component {
                     </div>
                 </div>
                 <div className="aboutRow">
-                    <div className="content sectionTitle" style={{minWidth: "200px"}}>
+                    <div className="content sectionTitle" >
                         <h1>My Skills</h1>
                     </div>
                     <div className="content">
-                        <p>JavaScript, React, Redux, Google Cloud Platform (firebase, firestore, cloud functions, security + permissions), Python, HTML, CSS, Node.js, TypeScript, web APIs, Express, Github, MongoDB, Amazon Web Services</p>
+                        <div className="skills">
+                            <div className="skill">JavaScript</div>
+                            <div className="skill">TypeScript</div>
+                            <div className="skill">Python</div>
+                            <div className="skill">Google Cloud Platform</div>
+                            <div className="skill">Amazon Web Services</div>
+                            <div className="skill">React</div>
+                            <div className="skill">Redux</div>
+                            <div className="skill">Node.js</div>
+                            <div className="skill">Agile</div>
+                            <div className="skill">Github</div>
+                            <div className="skill">HTML</div>
+                            <div className="skill">CSS</div>
+                            <div className="skill">MongoDB</div>
+                        </div>
+                        {/* <p>JavaScript, React, Redux, Google Cloud Platform (firebase, firestore, cloud functions, security + permissions), Python, HTML, CSS, Node.js, TypeScript, web APIs, Express, Github, MongoDB, Amazon Web Services</p> */}
                     </div>
                 </div>
                 <div className="aboutRow">
-                    <div className="content sectionTitle" style={{minWidth: "20px"}}>
+                    <div className="content sectionTitle" >
                         <h1>Education</h1>
                     </div>
                     <div className="content">
@@ -61,9 +76,9 @@ export class AboutPage extends React.Component {
                         </ol>
                     </div>
                 </div>
-                <div className="aboutRow">
+                {/* <div className="aboutRow">
                     <h1 className="content">Experience</h1>
-                </div>
+                </div> */}
             </div>
         )
     }
