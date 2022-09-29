@@ -1,7 +1,7 @@
 import React from "react";
 import "./projectsPage.scss";
 
-const Projects = {
+const Experiences = {
     personal: {
         name: "ricocode",
         link: "https://linktr.ee/ricocode",
@@ -30,31 +30,30 @@ const Projects = {
         summary: "Graduated with a Bachelors in Science for biology with an emphasis on human biology. I founded and was president of Community Table, a student led org that tackles on food insecurity within the UCI community. I also served as a Regional Director, on behalf of Thrive Scholars, to mentor 30 Thrive scholars."
     }
 }
-export const ProjectsPage = () => {
+export const Experience = () => {
     return (
         <div className="timeLineUI" id="experience">
             <div className="timeline">
-                {Object.keys(Projects).map((project, idx) => <ProjectContainer project={project} idx={idx} key={idx}/>)}
+                {Object.keys(Experiences).map((experience, idx) => <ExperienceContainer experience={experience} idx={idx} key={idx}/>)}
             </div>
         </div>
     )
 }
-const ProjectContainer = ({project, idx}) => {
-    let projectRef = Projects[project]
+const ExperienceContainer = ({experience, idx}) => {
+    let experienceRef = Experiences[experience]
     let containerStyles;
     if (idx % 2 === 0) {
         containerStyles = "container right"
     } else {
         containerStyles = "container left"
     }
-    console.log(project)
     return (
         <div class={containerStyles}>
             <div class="content">
-                <h2><a href={projectRef.link}>{projectRef.name}</a></h2>
-                <h6>{projectRef.years}</h6>
+                <h2><a href={experienceRef.link}>{experienceRef.name}</a></h2>
+                <h6>{experienceRef.years}</h6>
                 <p>
-                    {projectRef.summary}
+                    {experienceRef.summary}
                 </p>
             </div>
         </div>

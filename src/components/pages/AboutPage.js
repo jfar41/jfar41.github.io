@@ -3,6 +3,7 @@
 // 2 spot lights are aimed at it
 // left side is about
 import React, { useRef } from "react";
+import ReactTooltip from "react-tooltip";
 import * as THREE from "three";
 import "./style.scss";
 import {Canvas} from "@react-three/fiber"
@@ -21,13 +22,15 @@ export class AboutPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            tooltip: null
         }
     }
 
     render() {
+
         return (
             <div className="aboutSection" id="about">
+                
                 <div className="aboutRow">
                     <img src={jayAtGraduation} />
                     <div className="content rightSide">
@@ -46,21 +49,21 @@ export class AboutPage extends React.Component {
                     </div>
                     <div className="content">
                         <div className="skills">
-                            <div className="skill">JavaScript</div>
-                            <div className="skill">TypeScript</div>
-                            <div className="skill">Python</div>
-                            <div className="skill">Google Cloud Platform</div>
-                            <div className="skill">Amazon Web Services</div>
-                            <div className="skill">React</div>
-                            <div className="skill">Redux</div>
-                            <div className="skill">Node.js</div>
-                            <div className="skill">Agile</div>
-                            <div className="skill">Github</div>
-                            <div className="skill">HTML</div>
-                            <div className="skill">CSS</div>
-                            <div className="skill">MongoDB</div>
+                            <div className="skill" data-tip="Frontend and Backend">JavaScript</div>
+                            <div className="skill" data-tip="Backend">TypeScript</div>
+                            <div className="skill" data-tip="Algorithms, Data Structures, web crawling">Python</div>
+                            <div className="skill" data-tip="Firebase, Firestore, Storage, Cloud Functions">Google Cloud Platform</div>
+                            <div className="skill" data-tip="Amplify, EC2, hosting">Amazon Web Services</div>
+                            <div className="skill" data-tip="Frontend">React</div>
+                            <div className="skill" data-tip="Frontend">Redux</div>
+                            <div className="skill" data-tip="Backend">Node.js</div>
+                            <div className="skill" data-tip="Professional experience @ oneboard">Agile</div>
+                            <div className="skill" data-tip="Version Control">Github</div>
+                            <div className="skill" data-tip="Frontend">HTML</div>
+                            <div className="skill" data-tip="Frontend: LESS, SCSS">CSS</div>
+                            <div className="skill" data-tip="Backend">MongoDB</div>
                         </div>
-                        {/* <p>JavaScript, React, Redux, Google Cloud Platform (firebase, firestore, cloud functions, security + permissions), Python, HTML, CSS, Node.js, TypeScript, web APIs, Express, Github, MongoDB, Amazon Web Services</p> */}
+
                     </div>
                 </div>
                 <div className="aboutRow">
@@ -68,17 +71,26 @@ export class AboutPage extends React.Component {
                         <h1>Education</h1>
                     </div>
                     <div className="content">
-                        <ol>
+                        <p>
                             Biological Sciences B.S. from the University of California, Irvine
-                        </ol>
-                        <ol>
-                            Software Engineering Immersive by General Assembly
-                        </ol>
+                        </p>
                     </div>
                 </div>
-                {/* <div className="aboutRow">
-                    <h1 className="content">Experience</h1>
-                </div> */}
+                <div className="aboutRow">
+                    <div className="content sectionTitle" >
+                        <h1>Certificates</h1>
+                    </div>
+                    <div className="content">
+                        <a href="/certificates/GeneralAssembly">
+                            Software Engineering Immersive by General Assembly
+                        </a>
+                        <a href="/certificates/awsJobRoles">
+                            AWS Job Roles in Cloud
+                        </a>
+                    </div>
+                </div>
+                <ReactTooltip place="top" effect="solid"  globalEventOff="click"/>
+
             </div>
         )
     }

@@ -4,7 +4,7 @@ import './style.scss';
 import { Header } from "./components/Header";
 import {HomePage} from "./components/pages/HomePage";
 import {AboutPage} from "./components/pages/AboutPage";
-import {ProjectsPage} from "./components/pages/ProjectsPage";
+// import {ProjectsPage} from "./components/pages/ProjectsPage";
 
 export class Portfolio extends React.Component {
     constructor(props) {
@@ -24,7 +24,7 @@ export class Portfolio extends React.Component {
             <div className="portfolio" id="portfolio">
                 <HomePage />
                 <AboutPage viewingPage={this.state.viewingPage}/>
-                <ProjectsPage />
+                {/* <ProjectsPage /> */}
                 <Header updateViewingPage={this.updateViewingPage}/>
             </div>
         )
