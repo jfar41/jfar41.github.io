@@ -25,7 +25,7 @@ function App() {
                     <Route path="/certificates/awsJobRoles" element={<Certificate type="awsJobRoles"/>}/>
                     <Route path="/experience" element={<Experience />} />   
                     <Route path="/qrCode" element={<Certificate type="qrCode" />} />   
-                    <Route path="/*" element={<NonExistentPage />} />
+                    {/* <Route path="/*" element={<NonExistentPage />} /> */}
                 </Routes>
             </div>
         </BrowserRouter>

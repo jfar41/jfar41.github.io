@@ -1,8 +1,8 @@
-import React, {Suspense, useRef} from "react";
+import React, { Suspense } from "react";
 import "./style.scss";
 import * as THREE from 'three';
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls, SpotLight, useHelper } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 import Globe from "../3dmodels/Globe";
 import Blimp from "../3dmodels/Blimp";
@@ -14,7 +14,7 @@ export const HomePage = () => {
     console.log('Home Page loaded')
     const upperPos = [-200, 200, 150]
     // const coneMaterial = useLoader(TextureLoader, require("./images/brick.jpg"))
-    console.log(window.history)
+    // console.log(window.history)
     return (
         <div className="canvas" id="home">
             <Canvas 
