@@ -13,10 +13,10 @@ export const Header = () => {
         <div className="header">
             <nav ref={navRef}>
                 <a href="/">Home</a>
-                <a href="/#about">About</a>
-                <a href="/#experience">Experience</a>
+                <a href="/about">About</a>
+                <a href="/experience">Experience</a>
                 <a href="https://linktr.ee/ricocode">Socials</a>
-                <a href="/#qrCode">QR</a>
+                <a href="/qrCode">QR</a>
                 <button className="navBtn navCloseBtn" onClick={showNavBar}>
                     <FaTimes />
                 </button>

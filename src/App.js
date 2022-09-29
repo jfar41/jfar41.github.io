@@ -15,17 +15,17 @@ const NonExistentPage = () => {
 }
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basedname="/">
             <div className='portfolio'>
                 <Header updateViewingPage={null} />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/#about" element={<AboutPage />} />
-                    <Route path="/#certificates/GeneralAssembly" element={<Certificate type="GeneralAssembly" />}/>
-                    <Route path="/#certificates/awsJobRoles" element={<Certificate type="awsJobRoles"/>}/>
-                    <Route path="/#experience" element={<Experience />} />   
-                    <Route path="/#qrCode" element={<Certificate type="qrCode" />} />   
-                    {/* <Route path="/*" element={<NonExistentPage />} /> */}
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/certificates/GeneralAssembly" element={<Certificate type="GeneralAssembly" />}/>
+                    <Route path="/certificates/awsJobRoles" element={<Certificate type="awsJobRoles"/>}/>
+                    <Route path="/experience" element={<Experience />} />   
+                    <Route path="/qrCode" element={<Certificate type="qrCode" />} />   
+                    <Route path="/*" element={<NonExistentPage />} />
                 </Routes>
             </div>
         </BrowserRouter>
