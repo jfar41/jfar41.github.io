@@ -1,13 +1,18 @@
 import React from 'react';
 import {Router, Route, Routes, BrowserRouter} from 'react-router-dom'
 import './style.scss';
-import { Portfolio } from './Portfolio';
 import { Header } from './components/Header';
 import { HomePage } from './components/pages/HomePage';
 import { AboutPage } from './components/pages/AboutPage';
 import {Certificate} from "./components/pages/Certificate";
 import {Experience} from "./components/pages/Experience";
-
+const NonExistentPage = () => {
+    return (
+        <div className='certificate'>
+            Nothing here :)
+        </div>
+    )
+}
 function App() {
     return (
         <BrowserRouter>
@@ -19,19 +24,12 @@ function App() {
                     <Route path="/certificates/GeneralAssembly" element={<Certificate type="GeneralAssembly" />}/>
                     <Route path="/certificates/awsJobRoles" element={<Certificate type="awsJobRoles"/>}/>
                     <Route path="/experience" element={<Experience />} />   
+                    <Route path="/qrCode" element={<Certificate type="qrCode" />} />   
+                    <Route path="/*" element={<NonExistentPage />} />
                 </Routes>
             </div>
         </BrowserRouter>
     );
 }
-// function App() {
-//     return (
-//         <BrowserRouter>
-//             <Routes>
-//                 <Route path="/" element={<Portfolio />} />
-//             </Routes>
-//         </BrowserRouter>
-//     );
-// }
 
 export default App;

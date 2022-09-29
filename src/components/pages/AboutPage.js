@@ -4,37 +4,32 @@
 // left side is about
 import React, { useRef } from "react";
 import ReactTooltip from "react-tooltip";
-import * as THREE from "three";
 import "./style.scss";
-import {Canvas} from "@react-three/fiber"
-import { OrbitControls, useHelper } from "@react-three/drei";
-// import { Model } from "../../models/frames/Frames"
-import { Frame } from "../3dmodels/Frame";
-import { SpotLightHelper } from "three";
-import { Lamp1 } from "../scenery/lights";
-import {FaPlay, FaLock, FaTwitter, FaGithub, FaLinkedin} from "react-icons/fa"
 
 
 const jayAtGraduation = require("../../images/jayAtGraduation.jpeg")
-const skillSet = require("../../images/skillSet.jpg");
 
 export class AboutPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            tooltip: null
+            tooltip: false
         }
     }
+    componentDidUpdate = (prevProps, prevState) => {
 
+            ReactTooltip.rebuild()
+
+    }
     render() {
 
         return (
             <div className="aboutSection" id="about">
                 
-                <div className="aboutRow">
+                <div className="aboutRow" onClick={() => this.setState({tooltip: false})}>
                     <img src={jayAtGraduation} />
                     <div className="content rightSide">
-                        <h1>I'm Federico, a Full Stack Engineer👋🏽</h1>
+                        <h2>I'm Federico, a Full Stack Engineer👋🏽</h2>
                         <p>
                             I have 2 years of professional experience creating software 
                             for an education based platform with 100k monthly users.
@@ -45,10 +40,10 @@ export class AboutPage extends React.Component {
                 </div>
                 <div className="aboutRow">
                     <div className="content sectionTitle" >
-                        <h1>My Skills</h1>
+                        <h2>My Skills</h2>
                     </div>
                     <div className="content">
-                        <div className="skills">
+                        <div className="skills" onClick={() => this.setState({tooltip: true})} onMouseEnter={() => this.setState({tooltip: true})} onMouseLeave={() => {this.setState({tooltip: false})}}>
                             <div className="skill" data-tip="Frontend and Backend">JavaScript</div>
                             <div className="skill" data-tip="Backend">TypeScript</div>
                             <div className="skill" data-tip="Algorithms, Data Structures, web crawling">Python</div>
@@ -66,9 +61,9 @@ export class AboutPage extends React.Component {
 
                     </div>
                 </div>
-                <div className="aboutRow">
+                <div className="aboutRow" onClick={() => this.setState({tooltip: false})}>
                     <div className="content sectionTitle" >
-                        <h1>Education</h1>
+                        <h2>Education</h2>
                     </div>
                     <div className="content">
                         <p>
@@ -76,9 +71,9 @@ export class AboutPage extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="aboutRow">
+                <div className="aboutRow" onClick={() => this.setState({tooltip: false})}>
                     <div className="content sectionTitle" >
-                        <h1>Certificates</h1>
+                        <h2>Certificates</h2>
                     </div>
                     <div className="content">
                         <a href="/certificates/GeneralAssembly">
@@ -89,7 +84,20 @@ export class AboutPage extends React.Component {
                         </a>
                     </div>
                 </div>
-                <ReactTooltip place="top" effect="solid"  globalEventOff="click"/>
+                <div className="aboutRow" onClick={() => this.setState({tooltip: false})}>
+                    <div className="content sectionTitle" >
+                        <h2>What's Next?</h2>
+                    </div>
+                    <div className="content">
+                        <a href="https://dev.d2f4ed069urwgy.amplifyapp.com/">Todo</a>
+                        <p style={{fontSize: "10px"}}>This play app is to get hands on with AWS, starting with AWS Amplify. It currently has authentication, database integration, and live-hosting. I'm currently adding user specific data query and creation. Will then use this knowledge to create a fully functional bug tracker using GraphQL, Node.js, and TypeScript. If you create an account today, I will notify you when the updated app is live!</p>
+                        <p>.NET Framework</p>
+                        <p style={{fontSize: "10px"}}>Finishing up a fully functional e-commerce site wit the .NET Framework, MySQL, and hosting with AWS. Link will be published soon :)</p>
+                        <p>AWS Certified Cloud Practitioner</p>
+                        <p style={{fontSize: "10px"}}>Currently on module 7 of 11. Will take the exam next week!</p>
+                    </div>
+                </div>
+                {this.state.tooltip ? <ReactTooltip place="top" effect="solid" /> : null}
 
             </div>
         )

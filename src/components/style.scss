@@ -59,7 +59,7 @@ $vibrant-red: #C0392B;
             align-items: center;
             justify-content: center;
             gap: 1.5rem;
-            background-color: grey;
+            background-color: $wine-red;
             transition: 1s;
             transform: translateY(-100vh);
             .navCloseBtn {
@@ -76,47 +76,3 @@ $vibrant-red: #C0392B;
         }
     }
 }
-
-// .header {
-//     opacity: 1;
-//     z-index: 1000;
-//     top: 0;
-//     position: fixed;
-//     width: 100vw;
-//     height: 10%;
-//     left: 0;
-//     padding: 0;
-//     margin: 0;
-//     transition: 1s all ease-in-out;
-//     a {
-//         color: white;
-//         box-sizing: border-box;
-//         margin: 10px;
-//     }
-//     .icons {
-//         padding: 0;
-//         z-index: 0;
-//         position: absolute;
-//         top: 5vh;
-//         display: flex;
-//         flex-direction: row;
-
-//         .icon {
-//             color: whitesmoke;
-//             margin: 0px 5px;
-//             margin: 0px 10px;
-//             text-decoration: none;
-//             cursor: pointer;
-//         }
-//         .hidden {
-//             cursor:not-allowed;
-//         }
-       
-//     }
-//     .left {
-//         left: 5vw;
-//     }
-//     .right {
-//         right: 5vw;
-//     }
-// }

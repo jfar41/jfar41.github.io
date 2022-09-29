@@ -7,7 +7,7 @@ const Experiences = {
         link: "https://linktr.ee/ricocode",
         years: "Tech Content Creator | 2022",
         pic: require("../../images/DevTeam.jpeg"), 
-        summary: "Excited and joyful as always to learn and share it with others, I decided to become a content creator to increase awareness about the IT space, be a minority in tech advocate, and build a network with others!"
+        summary: "Excited and joyful as always to learn and share it with others, I decided to become a content creator to increase awareness about the IT space, be a minority in tech advocate, and connect with others in the field!"
     },
     oneboard: {
         name: "oneboard",
@@ -18,7 +18,7 @@ const Experiences = {
     },
     generalAssembly: {
         name: "General Assembly",
-        link: "https://generalassemb.ly/?&topic=&mkt_account_id=1056949875&mkt_campaign_id=691438924&mkt_ad_group_id=33353652422&mkt_device_type=c&mkt_keyword=general%20assembly&mkt_matchtype=e&mkt_placement=&mkt_ad_id=155686987642&mkt_network=g&mkt_target_id=aud-376588634307:kwd-459322816&mkt_feed_item_id=&utm_source=google&utm_medium=paid-search-bra&utm_campaign=TS:TX:BRA:LAX:BR:GeneralAssembly&utm_content=campus-lead-lander&utm_term=general%20assembly&gclid=CjwKCAjwyaWZBhBGEiwACslQo-bAAHH-UtL9J_mDd9aibhPKRRQgmPOpLpzl3nMamjWPEqvLTvaU0RoC6YEQAvD_BwE&gclsrc=aw.ds",
+        link: "/certificates/GeneralAssembly",
         years: "Software Engineering Immersive Program | 2020",
         pic: "",
         summary: "I gained a year worth of programming experience through GA's 12 week Software Engineering Immersive program, in where I learned cutting-edge web technology such as JavaScript, HMTL5, CSS3, Express.JS, Mongoose, MongoDB Atlas, Heroku, Python, Django, OAuth, Amazon Web Services, and React. My creativity, tech savviness, and grit was tested on a daily basis on a wide range of activities that required completion such as: solo coding projects, algorithms & data structures white board mocks, and group projects."
