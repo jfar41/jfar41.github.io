@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.0214a9d7.css",
-    "main.js": "/static/js/main.de5e2769.js",
+    "main.js": "/static/js/main.60663487.js",
     "static/media/DevTeam.jpeg": "/static/media/DevTeam.8dcd3da36de450e1143f.jpeg",
     "static/media/aws-job-roles-in-cloud.png": "/static/media/aws-job-roles-in-cloud.8a04aadcf662b1fcbc92.png",
     "static/media/jayAtGraduation.jpeg": "/static/media/jayAtGraduation.b1c78b8c6772f04f1864.jpeg",
     "static/media/GeneralAssemblyCertificate.png": "/static/media/GeneralAssemblyCertificate.e040f28ee1f1133b9b9f.png",
     "index.html": "/index.html",
     "main.0214a9d7.css.map": "/static/css/main.0214a9d7.css.map",
-    "main.de5e2769.js.map": "/static/js/main.de5e2769.js.map"
+    "main.60663487.js.map": "/static/js/main.60663487.js.map"
   },
   "entrypoints": [
     "static/css/main.0214a9d7.css",
-    "static/js/main.de5e2769.js"
+    "static/js/main.60663487.js"
   ]
 }
