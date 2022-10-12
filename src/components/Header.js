@@ -15,6 +15,7 @@ export const Header = () => {
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/experience">Experience</a>
+                <a href="/resume">Resume</a>
                 <a href="https://linktr.ee/ricocode">Socials</a>
                 <a href="/qrCode">QR</a>
                 <button className="navBtn navCloseBtn" onClick={showNavBar}>

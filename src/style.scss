@@ -26,9 +26,24 @@ $wine-red: #962013;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media only screen and (max-width: 1200px) {
-            // overflow: hidden;
-            overflow: auto;
+        // @media only screen and (max-width: 1200px) {
+        //     // overflow: hidden;
+        //     overflow: auto;
+        //     img {
+        //         box-sizing: border-box;
+        //         // width: 300px;
+        //         height: 70%;
+        //         // width: 80%;
+        //     }
+        //     .horizontal {
+        //         width: 70%;
+
+        //     }
+        //     .vertical {
+        //         height: 70%;
+        //     }
+        // }
+        overflow: auto;
             img {
                 box-sizing: border-box;
                 // width: 300px;
@@ -42,6 +57,5 @@ $wine-red: #962013;
             .vertical {
                 height: 70%;
             }
-        }
     }
 }

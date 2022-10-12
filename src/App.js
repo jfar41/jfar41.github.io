@@ -21,8 +21,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
-                    <Route path="/certificates/GeneralAssembly" element={<Certificate type="GeneralAssembly" />}/>
+                    <Route path="/certificates/generalAssembly" element={<Certificate type="generalAssembly" />}/>
                     <Route path="/certificates/awsJobRoles" element={<Certificate type="awsJobRoles"/>}/>
+                    <Route path="/resume" element={<Certificate type="resume"/>}/>
                     <Route path="/experience" element={<Experience />} />   
                     <Route path="/qrCode" element={<Certificate type="qrCode" />} />   
                     <Route path="/*" element={<NonExistentPage />} />

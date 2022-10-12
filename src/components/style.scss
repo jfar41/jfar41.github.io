@@ -1,9 +1,11 @@
 $wine-red: #962013;
 $vibrant-red: #C0392B;
+$gold-color: #CFA165;
 
 .header {
+    // background: $wine-red-contrast;
     opacity: 1;
-    z-index: 1000;
+    z-index: 50;
     top: 0;
     position: fixed;
     width: 100vw;
@@ -20,8 +22,10 @@ $vibrant-red: #C0392B;
             margin: 0 2rem;
             color: white;
             text-decoration: none;
+            z-index: 60;
             &:hover {
-                color: $vibrant-red;
+                background-color: $gold-color;
+                opacity: 1;
             }
         }
         
@@ -37,6 +41,9 @@ $vibrant-red: #C0392B;
     }
     .responsiveNav {
         transform: none;
+    }
+    &:hover {
+        background: rgba(150, 32, 19, 1);
     }
 }
 
