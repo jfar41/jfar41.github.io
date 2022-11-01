@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0214a9d7.css",
-    "main.js": "/static/js/main.d04f1c62.js",
+    "main.css": "/static/css/main.5f9c1b78.css",
+    "main.js": "/static/js/main.cbbb0743.js",
     "static/media/DevTeam.jpeg": "/static/media/DevTeam.8dcd3da36de450e1143f.jpeg",
+    "static/media/swe-resume.png": "/static/media/swe-resume.30623959b0c0b3953bc6.png",
     "static/media/aws-job-roles-in-cloud.png": "/static/media/aws-job-roles-in-cloud.8a04aadcf662b1fcbc92.png",
     "static/media/jayAtGraduation.jpeg": "/static/media/jayAtGraduation.b1c78b8c6772f04f1864.jpeg",
     "static/media/GeneralAssemblyCertificate.png": "/static/media/GeneralAssemblyCertificate.e040f28ee1f1133b9b9f.png",
     "index.html": "/index.html",
-    "main.0214a9d7.css.map": "/static/css/main.0214a9d7.css.map",
-    "main.d04f1c62.js.map": "/static/js/main.d04f1c62.js.map"
+    "main.5f9c1b78.css.map": "/static/css/main.5f9c1b78.css.map",
+    "main.cbbb0743.js.map": "/static/js/main.cbbb0743.js.map"
   },
   "entrypoints": [
-    "static/css/main.0214a9d7.css",
-    "static/js/main.d04f1c62.js"
+    "static/css/main.5f9c1b78.css",
+    "static/js/main.cbbb0743.js"
   ]
 }
