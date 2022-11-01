@@ -89,12 +89,13 @@ export class AboutPage extends React.Component {
                         <h2>What's Next?</h2>
                     </div>
                     <div className="content">
-                        <a href="https://dev.d2f4ed069urwgy.amplifyapp.com/">Todo</a>
-                        <p style={{fontSize: "10px"}}>This play app is to get hands on with AWS, starting with AWS Amplify. It currently has authentication, database integration, and live-hosting. I'm currently adding user specific data query and creation. Will then use this knowledge to create a fully functional bug tracker using GraphQL, Node.js, and TypeScript. If you create an account today, I will notify you when the updated app is live!</p>
-                        <p>.NET Framework</p>
-                        <p style={{fontSize: "10px"}}>Finishing up a fully functional e-commerce site wit the .NET Framework, MySQL, and hosting with AWS. Link will be published soon :)</p>
+                        {/* <a href="https://dev.d2f4ed069urwgy.amplifyapp.com/">Todo</a> */}
+                        <a href="https://www.savagebuns.com">Savage Buns</a>
+                        <p style={{fontSize: "10px"}}>Single page application for a Los Angeles DJ with React, JS, SCSS, AWS Ecosystem (Dynamo DB, App Sync, Amplify, Cognito), GraphQL API, GoDaddy for custom domain routing. Finalizing group security for in-house content management system (adding AWS S3).</p>
+                        <a href="https://github.com/jfar41/numero-uno">Numero Uno: Supermarket</a>
+                        <p style={{fontSize: "10px"}}>An application based on a RESTful API with a decoupled architecture. Friendlies: C#, ASP.NET Core, Entity Framework Core, JSON, Postman, and best practices (DDD, Repositories, Services, Unit of Work pattern, Interfaces, etc.). A project for my local supermarket, the numero uno🍎🥕🥦🍌.</p>
                         <p>AWS Certified Cloud Practitioner</p>
-                        <p style={{fontSize: "10px"}}>Currently on module 7 of 11. Will take the exam next week!</p>
+                        <p style={{fontSize: "10px"}}>Learned about the different services that AWS offers, differences between those that seem similar at first glance, understanding different costs and how to setup a service to allocate resources needed due to budget and scale of the application.</p>
                     </div>
                 </div>
                 {this.state.tooltip ? <ReactTooltip place="top" effect="solid" /> : null}

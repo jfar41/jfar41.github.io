@@ -14,7 +14,17 @@ export class ProjectsPage extends React.Component {
             <div className="projectSection" id="project">
                 <div className="projectsContainer">
                     <div className="projectContainer">
-                        <div className={"title"}>Title</div>
+                        <div className={"content"}>
+
+                        </div>
+                        <div className={"tableOfContent"}>
+                            <div className="title">
+                            Projects
+                            </div>
+                            <div className="projects">
+                            
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
